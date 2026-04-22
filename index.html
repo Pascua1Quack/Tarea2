@@ -110,14 +110,14 @@
                         enfoque orientado a resultados para transformar ideas en código funcional.
                     </p>
                     <!-- ERROR 1: El botón "Ver mis proyectos" no tiene estilos de botón primario
-                         PISTA: Revisa las clases del botón, falta una clase -->
+                        LISTO SE CAMBIA A BTN PRIMARY -->
                     <div class="hero__buttons">
-                        <a href="#projects" class="btn">
+                        <a href="#projects" class="btn btn--primary">
                             <i class="fas fa-rocket"></i> Ver mis proyectos
                         </a>
                         <!-- ERROR 2: El enlace no lleva a la sección correcta
-                             PISTA: El ID de la sección de contacto es "contact", verifica el href -->
-                        <a href="#contacto" class="btn btn--outline">
+                             listo: El ID de la sección de contacto es "contact", verifica el href -->
+                        <a href="#contact" class="btn btn--outline">
                             <i class="fas fa-envelope"></i> Contáctame
                         </a>
                     </div>
@@ -157,10 +157,10 @@
                 <div class="interests__grid">
                     <!-- Card 1 -->
                     <!-- ERROR 3: Esta card no tiene el icono visible
-                         PISTA: Revisa el contenido del div card__icon, falta el elemento del icono -->
+                         LISTO SE AGRAGAN UNAS LINEAS-->
                     <article class="interest__card">
                         <div class="card__icon">
-                            
+                            <i class="fas fa-code"></i>
                         </div>
                         <h3 class="card__title">Desarrollo Web</h3>
                         <p class="card__description">
@@ -176,8 +176,8 @@
                     
                     <!-- Card 2 -->
                     <!-- ERROR 4: Esta card no tiene los estilos de tarjeta aplicados
-                         PISTA: El nombre de la clase está mal escrito, revisa la ortografía de "interest" -->
-                    <article class="interst__card">
+                         listo: El nombre de la clase está mal escrito, revisa la ortografía de "interest" -->
+                    <article class="interest__card">
                         <div class="card__icon">
                             <i class="fas fa-shield-halved"></i>
                         </div>
@@ -347,9 +347,9 @@
 
         <!-- ========== PROJECTS SECTION ========== -->
         <!-- ERROR 5: Esta sección no tiene el contenido centrado ni con el ancho máximo
-             PISTA: Falta una clase importante en el div que envuelve el contenido -->
+             listo: Falta una clase importante en el div que envuelve el contenido -->
         <section class="projects section" id="projects">
-            <div>
+            <div class="container">
                 <div class="section__header">
                     <span class="section__subtitle">Mi trabajo</span>
                     <h2 class="section__title">Proyectos Destacados</h2>
@@ -390,8 +390,8 @@
                     
                     <!-- Project 2 -->
                     <!-- ERROR 6: Esta tarjeta de proyecto no tiene los estilos de card
-                         PISTA: Falta la clase que identifica a este elemento como tarjeta de proyecto -->
-                    <article class="project">
+                         listo: Falta la clase que identifica a este elemento como tarjeta de proyecto -->
+                    <article class="project__card">
                         <div class="project__image">
                             <div class="project__placeholder">
                                 <i class="fas fa-chart-line"></i>
@@ -413,10 +413,10 @@
                             </p>
                             <div class="project__tech">
                                 <!-- ERROR 7: Estos tags de tecnología no tienen el estilo correcto
-                                     PISTA: Revisa la clase de los spans, debería ser "tech" -->
-                                <span class="tag">Python</span>
-                                <span class="tag">Django</span>
-                                <span class="tag">Chart.js</span>
+                                     listo: Revisa la clase de los spans, debería ser "tech" -->
+                                <span class="tech">Python</span>
+                                <span class="tech">Django</span>
+                                <span class="tech">Chart.js</span>
                             </div>
                         </div>
                     </article>
@@ -483,10 +483,10 @@
                             </div>
                             
                             <!-- ERROR 8: Este icono de ubicación no se muestra correctamente
-                                 PISTA: La clase del icono está incompleta, revisa el nombre del icono de Font Awesome -->
+                                 listo La clase del icono está incompleta, revisa el nombre del icono de Font Awesome -->
                             <div class="contact__item">
                                 <div class="contact__icon">
-                                    <i class="fas fa-map"></i>
+                                    <i class="fas fa-map-marker-alt"></i>
                                 </div>
                                 <div class="contact__text">
                                     <span class="contact__label">Ubicación</span>
@@ -495,15 +495,14 @@
                             </div>
                             
                     <!-- ERROR 9: El texto "Disponible para trabajar" no tiene el estilo verde
-                         PISTA: Falta el modificador de clase que indica disponibilidad -->
+                         listo: Falta el modificador de clase que indica disponibilidad -->
                             <div class="contact__item">
                                 <div class="contact__icon">
                                     <i class="fas fa-briefcase"></i>
                                 </div>
                                 <div class="contact__text">
                                     <span class="contact__label">Disponibilidad</span>
-                                    <span class="contact__value">Disponible para trabajar</span>
-                                </div>
+                                    <span class="contact__value contact__value--available">Disponible para trabajar</span>
                             </div>
                         </div>
                     </div>
@@ -538,12 +537,12 @@
                 </div>
                 
                 <!-- ERROR 10: Uno de los íconos de redes sociales no tiene la clase correcta para estilos
-                     PISTA: Revisa que todos los enlaces tengan la clase footer__social-link -->
+                     listo: Revisa que todos los enlaces tengan la clase footer__social-link -->
                 <div class="footer__social">
                     <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
                     <a href="mailto:tu@email.com" class="footer__social-link" aria-label="Email">
